@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Courses | School of Code</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a class="SoC" href="/">&lcub; School of Code &rcub;</a>
+				<nav id="mainNav">
+					<ul>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Curriculum</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Sign Out</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<nav class="sectionNav">
+				<a class="navItem" href="/trainers">
+					<h3>Trainers</h3>
+					<img
+						src="/img/iconfinder_human_1216577.png"
+						class="formImg"
+						alt="Trainers"
+					/>
+				</a>
+				<a class="navItem selected" href="/courses">
+					<h3>Courses</h3>
+					<img
+						src="/img/iconfinder_curly_braces_1216586.png"
+						class="formImg"
+						alt="Courses"
+					/>
+				</a>
+				<a class="navItem" href="/assignments">
+					<h3>Assignments</h3>
+					<img
+						src="/img/iconfinder_paper_1216567.png"
+						class="formImg"
+						alt="Assignments"
+					/>
+				</a>
+				<a class="navItem" href="/students">
+					<h3>Students</h3>
+					<img
+						src="/img/iconfinder_humans_1216581.png"
+						class="formImg"
+						alt="Students"
+					/>
+				</a>
+			</nav>
+
+			<form action="" class="searchSection">
+				<div>
+					<input
+						type="text"
+						class="search"
+						placeholder="Search for a course "
+					/>
+					<img
+						src="/img/iconfinder_2040_searchpad_change_c12_2400494.png"
+						alt="search"
+					/>
+				</div>
+			</form>
+
+			<main class="mainForm">
+				<div class="listContainer">
+					<!-- <h2>Trainer List</h2> -->
+					<h2> <u> Title - stream - type - Start date - End date</u> </h4>
+					<ul id="trainersList">
+						<% for(let i=0; i<result.length; i++) {%>
+							<% const {title, stream, type, start_date, end_date} = result[i]; %>  
+							<li> <%= title %> - <%= stream %> - <%= type %> - 
+								<%=start_date.getDate()%>/<%= start_date.getMonth()+1 %>/<%= start_date.getFullYear() %> - 
+								<%=end_date.getDate()%>/<%= end_date.getMonth()+1 %>/<%= end_date.getFullYear() %>
+							</li>
+						<% } %> 
+					</ul>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

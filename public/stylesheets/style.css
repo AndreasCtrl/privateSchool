@@ -1,0 +1,288 @@
+* {
+	font-size: 1.15rem;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+	background: rgb(8, 7, 68);
+	background: radial-gradient(
+		circle,
+		rgba(8, 7, 68, 1) 80%,
+		rgba(53, 4, 60, 1) 100%
+	);
+	color: whitesmoke;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(245, 245, 245, 0.699);
+}
+.SoC {
+	display: flex;
+	width: 25%;
+	min-width: 265px;
+	justify-content: center;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.8rem;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+#mainNav {
+	width: 75%;
+}
+#mainNav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	padding: 0;
+	padding-left: 30px;
+}
+#mainNav ul li a {
+	text-decoration: none;
+	color: whitesmoke;
+	transition: all 0.25s;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+#mainNav ul li a:hover {
+	background-color: rgb(47, 16, 160);
+}
+
+#alert {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#alert div {
+	display: flex;
+	background-color: rgb(82, 21, 12);
+	border-radius: 20px;
+	align-items: center;
+	padding-left: 10px;
+}
+#alert p {
+	font-size: 0.8rem;
+	padding: 2px;
+	width: 330px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#alertImg {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+#optionHeading {
+	text-align: center;
+	margin-top: 30px;
+}
+#selectOption {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: center;
+	margin: 0 auto 30px auto;
+}
+.option {
+	width: 22%;
+	min-width: 120px;
+	max-width: 230px;
+	margin: 20px 7%;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.option:hover {
+	border: 1px solid whitesmoke;
+}
+.option p {
+	text-align: center;
+	color: #aad8b0;
+}
+.optionImg {
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+#footerNav {
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+	align-items: center;
+}
+.socialImg {
+	width: 60px;
+	border-radius: 5px;
+}
+
+/* From this point we leave home page!!!!!! */
+
+/* Section Navs!!! */
+.sectionNav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.formImg {
+	width: 60px;
+}
+
+.sectionNav a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+.navItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+	border-radius: 10px;
+	transition: all 0.25s;
+	padding: 5px;
+}
+
+.navItem.selected {
+	background-color: rgb(84, 9, 94);
+	background-color: f72585;
+	/* color: black; */
+}
+
+.navItem:hover {
+	background-color: rgb(47, 16, 160);
+}
+
+/* Find to EDIT UPDATE!!!!!!!!!!!!!!!!!!!!! */
+.searchSection {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	margin: 70px auto;
+	padding-left: 30px;
+}
+.searchSection label {
+	margin-left: 50px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+.searchSection div {
+	display: flex;
+}
+.searchSection input {
+	border-radius: 30px;
+	width: 100%;
+	padding-left: 20px;
+	border: none;
+}
+.searchSection input:focus {
+	outline: none;
+	border: 1px solid rgb(128, 42, 139);
+}
+.searchSection img {
+	position: relative;
+	height: 50px;
+	right: 50px;
+}
+.searchSection img:hover {
+	cursor: pointer;
+}
+.searchSection img:active {
+	box-shadow: inset -3px -3px 3px rgba(255, 255, 255, 0.6),
+		inset 2px 2px 3px rgba(0, 0, 0, 0.9);
+	border-radius: 50%;
+}
+
+/* Add new Forms!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.mainForm {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	/* flex-wrap: wrap; */
+	/* align-self: flex-start; */
+	width: 1000px;
+	margin: 70px auto;
+}
+.mainForm h2 {
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.mainForm form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* .mainForm label {
+	margin: 10px 5px 0 5px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+} */
+.mainForm input,
+.mainForm select {
+	width: 90%;
+	margin: 5px;
+	border-radius: 8px;
+	padding: 5px 5px 5px 10px;
+	font-size: 1rem;
+}
+
+.mainForm input:focus {
+	outline: none;
+	border: 2px solid rgb(128, 42, 139);
+}
+
+.mainForm form button {
+	width: 100px;
+	background-color: #aad8b0;
+	border-radius: 5px;
+}
+/* 
+.formBtns {
+	margin: 20px 0 0 10px;
+	font-size: 1rem;
+	padding: 8px;
+	width: 150px;
+	background-color: #aad8b0;
+	color: #03071e;
+
+	border-radius: 8px;
+}
+
+.formBtns:focus {
+	outline: none;
+} */
+
+/* .listContainer { */
+/* width: 350px; */
+/* display: flex;
+	flex-direction: column;
+	/* justify-content: end; */
+/* align-items: flex-end; */
+/* align-content: space-between; */
+/* align-content: space-between; */
+/* } */
+
+#trainersList li {
+	margin: 12px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a class="SoC" href="/">&lcub; School of Code &rcub;</a>
+        <nav id="mainNav">
+          <ul>
+            <li> <a href="">About Us</a></li>
+            <li> <a href="">Curriculum</a></li>
+            <li> <a href="">Contact Us</a></li>
+            <li> <a href="">Sign Out</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div id="alert">
+            <div>
+                <img src="/img/alert.png" alt="Alert" id="alertImg"/>
+                <p>
+                  Logged in with admin privileges! You have full access to modify
+                  school structure!
+                </p>
+            </div>
+        </div>
+        <section>
+        <div>
+            <h2 id="optionHeading">Which section would you like to modify?</h2>
+        </div>
+        <section id="selectOption">
+            <a href="/trainers" class="option"><p>Trainers</p><img class="optionImg" src="/img/iconfinder_human_1216577.png" alt="trainers"> </a>
+            <a href="/courses" class="option"> <p>Courses</p><img class="optionImg" src="/img/iconfinder_curly_braces_1216586.png" alt="courses"></a>
+            <a href="/assignments" class="option"> <p>Assignments</p> <img class="optionImg" src="/img/iconfinder_paper_1216567.png" alt="assignments"> </a>
+            <a href="/students" class="option"> <p>Students</p> <img class="optionImg" src="/img/iconfinder_humans_1216581.png" alt="students"> </a>
+        </section>
+      </main>
+
+      <footer>
+          <div id="footerNav">
+            <p>Connect with us:</p>
+            <a href="https://www.facebook.com/" target="_blank"><img class="socialImg" src="/img/facebook2.png" alt="" /></a>
+            <a href="https://github.com/" target="_blank"><img class="socialImg" src="/img/gitHub1.png" alt="" /></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="socialImg" src="/img/linkdeIn1.png" alt="" /></a>
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>
